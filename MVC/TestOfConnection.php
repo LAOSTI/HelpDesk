@@ -1,4 +1,4 @@
 <?php
-require_once "../Model/Context/Connection.php";
+require_once "../Model/Data/Connection.php";
 $connection = Connection::Connect();
 ?>
