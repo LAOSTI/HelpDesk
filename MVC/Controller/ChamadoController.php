@@ -6,8 +6,8 @@ class ChamadoController {
     public function __construct($connection) {
         $this->connection = $connection;
     }
-
-    public function index() {
+    
+    public function ListarCamados() {
         $query = "SELECT * FROM chamados";
         $result = mysqli_query($this->connection, $query);
         
