@@ -5,6 +5,9 @@ switch ($url) {
     case 'login':
         require_once 'View/Front-end.php';
         break;
+    case 'teste':
+        require_once 'TestOfConnection.php';
+        break;
     case 'cadastrar-login':
         require_once 'Controller/LoginController.php';
         $controle = new LoginController();
@@ -16,7 +19,6 @@ switch ($url) {
         require_once 'Controller/AtendenteController.php';
         $controle = new LoginController();
         $controle->processa("A");
-    default:
     case 'funcionario':
         require_once 'View/Front-end.php';
         break;
