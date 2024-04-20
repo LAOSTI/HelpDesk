@@ -26,16 +26,16 @@
                                     <h1>Login</h1>
                                 </div>
                                 <div class="botoes col-md-12">
-                                    <button type="button" class="btn btn-outline-secondary" name="data[tbusuario][tipo_usuario]"->Atendimento</button>
-                                    <button type="button" class="btn btn-outline-secondary" name="data[tbusuario][tipo_usuario]">Infraestrutura</button>
-                                    <button type="button" class="btn btn-outline-secondary" name="data[tbusuario][tipo_usuario]">Desenvolvimento</button>
+                                    <button type="button" class="btn btn-outline-secondary" name="data[FUNCIONARIO][TIPO_USUARIO]" value="ATENDENTE">Atendente</button>
+                                    <button type="button" class="btn btn-outline-secondary" name="data[FUNCIONARIO][TIPO_USUARIO]" value="INFRAESTRUTURA">Infraestrutura</button>
+                                    <button type="button" class="btn btn-outline-secondary" name="data[FUNCIONARIO][TIPO_USUARIO]" value="DESENVOLVEDOR">Desenvolvedor</button>
                                 </div>
                                 <div class="col-md-8 login mx-auto"> 
                                     <div class="input-group mb-3">
                                         <div class="icone">
                                             <i class="fa-solid fa-user input-group-prepend fa-2xl"></i>
                                         </div>
-                                        <input type="text" class="form-control input-login" placeholder="Nome" name="data[tbusuario][usuario]">
+                                        <input type="text" class="form-control input-login" placeholder="Nome" name="data[FUNCIONARIO][USUARIO]">
                                     </div>
                                 </div>
                                 <div class="col-md-8 login mx-auto"> 
@@ -43,7 +43,7 @@
                                         <div class="icone">
                                             <i class="fa-solid fa-lock input-group-prepend fa-2xl"></i>
                                         </div>
-                                        <input type="password" class="form-control input-login" placeholder="Senha" name="data[tbusuario][senha]">
+                                        <input type="password" class="form-control input-login" placeholder="Senha" name="data[FUNCIONARIO][SENHA]">
                                     </div>
                                 </div>
                                 <div class="botao-entrar col-md-12">
@@ -59,15 +59,16 @@
 </body>
 </html>
 <script>
-$("#formLogin").submit(function(){
-    $.ajax({
-        url: '',
-        type: 'post',
-        data: $(this).serialize(),    
-        success: function(data){
-            
-        }
-    })
-}) 
-
+$(document).ready(function(){
+    $("#formLogin").click(function(event){
+        $.ajax({
+            url: '../Controller/LoginController.php',
+            type: 'post',
+            data: $(this).serialize(),
+            success: function(data){
+                console.log(data);
+            }
+        })
+    });
+});
 </script>
