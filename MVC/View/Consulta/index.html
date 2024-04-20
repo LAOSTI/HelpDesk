@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Consultar Chamado</title>
+</head>
+<body>
+    <div class="card mr-2 ml-2 mt-2 h-100 vh-100 vh-100">
+        <div class="card-body">
+            <div class="container">
+                <form class="form-inline justify-content-center">
+                    <input class="form-control mr-sm-2 mb-2" type="Nº do chamado" placeholder="Nº do chamado" aria-label="Nº do chamado">
+                    
+                    <!-- Select para escolher opção do STATUS-->
+                    <div class="form-group mr-sm-2 mb-2">
+                        <select class="form-control" id="selectOptionStatus">
+                            <option value="status" style="font-weight: bold;">Status</option>
+                            <option value="opcao1">Aguardando resposta</option>
+                            <option value="opcao2">Em atendimento</option>
+                            <option value="opcao3">Nível 2</option>
+                            <option value="opcao4">Concluído</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Select para escolher opção do SETOR-->
+                    <div class="form-group mr-sm-2 mb-2">
+                        <select class="form-control" id="selectOptionSetor">
+                            <option value="status" style="font-weight: bold;">Setor</option>
+                            <option value="opcao1">Suporte</option>
+                            <option value="opcao2">Desenvolvimento</option>
+                            <option value="opcao3">Infra</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Select para escolher opção do RESPONSÁVEL-->
+                    <div class="form-group mr-sm-2 mb-2">
+                        <select class="form-control" id="selectOptionResponsavel">
+                            <option value="status" style="font-weight: bold;">Responsável</option>
+                            <option value="opcao1">Ana Paula</option>
+                            <option value="opcao2">Emmerick</option>
+                            <option value="opcao3">Luiz</option>
+                            <option value="opcao4">Matheus T</option>
+                            <option value="opcao5">Paulo H</option>
+                            <option value="opcao6">Rângelo</option>
+                            <option value="opcao7">Valessa</option>
+                        </select>
+                    </div>     
+                </form>
+            </div>
+            
+            <!-- Botão Pesquisar -->
+            <div class="d-flex justify-content-end mr-5">
+                <button type="button" class="btn btn-outline-success btn-lg">Pesquisar</button>
+            </div>
+            
+        </div>
+    </div>
+        </div>
+            </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
