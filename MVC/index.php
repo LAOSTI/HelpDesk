@@ -3,7 +3,7 @@ $url = isset($_GET['url']) ? $_GET['url'] : '';
 
 switch ($url) {
     case 'login':
-        require_once 'View/Front-end.php';
+        require_once 'View/Login/login.html';
         break;
     case 'teste':
         require_once 'TestOfConnection.php';
