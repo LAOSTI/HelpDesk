@@ -6,7 +6,7 @@ class Connection{
         $password = "password";
 
         try{
-            $conn = new PDO("mysql:host=$serverName;dbname=DATABASE",$userName,$password);
+            $conn = new PDO("mysql:host=$serverName;dbname=HELPDESK",$userName,$password);
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             echo "Connection success!";
             return $conn;
