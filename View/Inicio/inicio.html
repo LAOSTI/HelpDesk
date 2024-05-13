@@ -4,61 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>softwear Chamado Interno</title>
- 
+  <link rel="stylesheet" href="View/AberturaChamado/css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <style>
-    .btn-sair {
-      background-color: #70085f;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    .btn-sair:hover {
-      background-color: #720757;
-    }
-
-    .icon {
-      margin-right: 5px;
-    }
-    
-    .navbar-brand {
-      margin-right: 20px;
-      padding-right: 70px; 
-      border-right: 1px solid rgba(10, 10, 10, 0.6); 
-    }
-
-  
-    .navbar-brand:nth-last-child(2), 
-    .navbar-brand:nth-last-child(2) + .navbar-brand {
-      border-right: none;
-    }
-  </style>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
   <div class="container">
-    <div class="row">
-      <div class="col">
-        <div class="card">
-          <div class="card-body">
-            <span class="navbar-brand mb-0 h1">Início</span>
-            <span class="navbar-brand mb-0 h1">Abrir Chamado</span>
-            <span class="navbar-brand mb-0 h1">Consultar Chamado</span>
-            <span class="navbar-brand mb-0 h1">Fulano de Tal</span>
-            <span class="navbar-brand mb-0 h1">
-              <button class="btn-sair">Sair</button>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div class="row mt-3">
-      <div class="col-md-4">
+      <div class="col-md-4 pt-5">
         <div class="card mb-3">
           <div class="card-header"><b>Chamados em Aberto Hoje</b></div>
           <div class="card-body text-center">
@@ -67,7 +22,7 @@
         </div>
       </div>
             
-      <div class="col-md-4">
+      <div class="col-md-4 pt-5">
         <div class="card mb-3">
           <div class="card-header"><b>Chamados em Andamento</b></div>
           <div class="card-body text-center">
@@ -76,7 +31,7 @@
         </div>
       </div>
             
-      <div class="col-md-4">
+      <div class="col-md-4 pt-5">
         <div class="card mb-3">
           <div class="card-header"><b>Chamados Fechados</b></div>
           <div class="card-body text-center">
@@ -87,7 +42,7 @@
     </div>
 
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-4 pt-5">
         <div class="card mb-3">
           <div class="card-header"><b>Chamados em Atraso</b></div>
           <div class="card-body text-center">
@@ -96,7 +51,7 @@
         </div>
       </div>
             
-      <div class="col-md-4">
+      <div class="col-md-4 pt-5">
         <div class="card mb-3">
           <div class="card-header"><b>Chamados Com Prioridade Alta</b></div>
           <div class="card-body text-center">
@@ -105,7 +60,7 @@
         </div>
       </div>
             
-      <div class="col-md-4">
+      <div class="col-md-4 pt-5">
         <div class="card mb-3">
           <div class="card-header"><b>Chamados Cancelados</b></div>
           <div class="card-body text-center">
@@ -115,9 +70,5 @@
       </div>
     </div>
   </div>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

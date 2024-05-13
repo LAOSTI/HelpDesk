@@ -1,16 +1,17 @@
 <?php
-
-require_once "Model/LoginModel.php";
+require_once __DIR__."../../Model/LoginModel.php";
 class LoginController{
-    public static function Processa($data){
+    public static function processa($data){
 
-        $login = new Login();
-        $retorno = $login->validaLogin($data);
+        new Login();
+        $retorno = Login::validaLogin($data);
 
         if(!empty($retorno)){
-            $_SESSION['id'] = $retorno['id'];
+
             $result = array(
                 "status" => 200,
+                "id_usuario" => $retorno['id'],
+                "nome" => $retorno['nome']
             );
         }else{
             $result = array(

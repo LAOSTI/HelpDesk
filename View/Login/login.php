@@ -72,7 +72,7 @@ $("#formLogin").submit(function(){
             var obj = JSON.parse(data);
 
             if (obj.status == 200) {
-                window.location="http://seusite.com";
+                window.location="../View/Menu/menu.php";
             } else {
                 alert(obj.msg);
             }

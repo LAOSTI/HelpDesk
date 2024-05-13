@@ -1,10 +1,15 @@
 <?php
 $url = isset($_GET['url']) ? $_GET['url'] : '';
-// if(!isset($_SESSION)){session_start();}
 
 switch ($url) {
     case 'login':
-        require_once 'View/Login/login.html';
+        require_once 'View/Login/login.php';
+        break;
+    case 'abrir_chamado':
+        require_once 'action.php';
+        break;
+    case 'sair':
+        require_once 'action.php';
         break;
     case 'teste':
         require_once 'TestOfConnection.php';

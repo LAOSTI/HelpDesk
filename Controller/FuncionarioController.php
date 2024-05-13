@@ -1,15 +1,22 @@
-<?
-require_once "Model/FuncionarioModel.php";
-class AtendenteController{
-    public function processa($acao){
-        if($acao == "F"){
-            $novoFuncionario = new Funcionario();
-            $novoFuncionario->setNOME($_POST['FRONT-END VARIAVEL']);
-            $novoFuncionario->setTELEFONE($_POST['FRONT-END VARIAVEL']);
-            $novoFuncionario->setEMAIL($_POST['FRONT-END VARIAVEL']);
-            $novoFuncionario->setCARGO($_POST['FRONT-END VARIAVEL']);
-            $novoFuncionario->cadastrarAtendente();
+<?php
+require_once __DIR__."/../Model/FuncionarioModel.php";
+
+class FuncionarioController{
+    public static function buscarFuncionario(){
+        
+        new Funcionario();
+        $retorno = Funcionario::buscar();
+
+        if(!empty($retorno)){
+            $result = $retorno;
+        }else{
+            $result = array(
+                "status" => 500,
+                "msg" => "Erro ao buscar funcionários",
+            );
         }
+
+        return $result;
     }
 }
 ?>
