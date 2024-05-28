@@ -1,12 +1,19 @@
 <?php
 $url = isset($_GET['url']) ? $_GET['url'] : '';
 
+
 switch ($url) {
     case 'login':
         require_once 'View/Login/login.php';
         break;
     case 'abrir_chamado':
         require_once 'action.php';
+        break;
+    case 'consultar_chamado':
+        require_once 'action.php';
+        break;
+    case 'listar_chamados':
+        require_once 'View/ConsultarChamado/listarChamados.php';
         break;
     case 'sair':
         require_once 'action.php';

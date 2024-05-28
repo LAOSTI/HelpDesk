@@ -54,13 +54,13 @@ if(!isset($_SESSION)){session_start();}
         </ul>
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="inicio" role="tabpanel" aria-labelledby="inicio-tab">
-                <?php include "../Inicio/inicio.html" ?>
+                <?php include "../Inicio/inicio.php" ?>
             </div>
             <div class="tab-pane fade" id="abrirChamado" role="tabpanel" aria-labelledby="abrirChamado-tab">
                 <?php include "../AbrirChamado/chamado.php" ?>
             </div>
-            <div class="tab-pane fade" id="contato" role="tabpanel" aria-labelledby="consultarChamado-tab">
-
+            <div class="tab-pane fade" id="consultarChamado" role="tabpanel" aria-labelledby="consultarChamado-tab">
+                <?php include "../ConsultarChamado/consultarChamado.php" ?>
             </div>
         </div>
     </header>
