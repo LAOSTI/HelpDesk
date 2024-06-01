@@ -1,16 +1,5 @@
 # HelpDesk - Site de Chamados 
 Um site de chamados helpdesk para gerenciar solicitações de suporte e tickets de problemas.
-# Environment
-1. Intale o docker. [Visite docker.com]("https://www.docker.com/products/docker-desktop/)
-2. Baixe o arquivo docker-compose.yml.
-3. Crie uma pasta na area de trabalho.
-4. Copia o endereço da pasta.
-5. Abra o arquivo YML e na linha 10 substitua PAHT pelo caminha da pasta que foi criada.
-6. Salve o arquivo.
-7. Vá até o diretorio onde esta o arquivo YML clique da barra de navegação e digite CMD.
-8. Na CLI digite: docker compose up -d.
-9. Salve os arquivos do repositório dentro da pasta criada na area de trabalho.
-10. Pronto. Agora basta acessar o localhost através do navegador de acordo com os arquivos.
 
 <div>
   <img src="imgreadme/login.png" alt="">
@@ -37,6 +26,18 @@ O MySQL é um sistema de gerenciamento de banco de dados relacional (SGBDR) de c
 ## PHP (Hypertext Preprocessor)
 Ela é especialmente adequada para a criação de sites dinâmicos e interativos, pois permite que você processe dados, interaja com bancos de dados.
 1. Uma das principais características do PHP é sua capacidade de integrar-se facilmente com HTML. Você pode incorporar código PHP diretamente em um documento HTML, geralmente entre as tags <?php e ?>.
+
+# Environment
+1. Intale o docker. [Visite docker.com]("https://www.docker.com/products/docker-desktop/)
+2. Baixe o arquivo docker-compose.yml.
+3. Crie uma pasta na area de trabalho.
+4. Copia o endereço da pasta.
+5. Abra o arquivo YML e na linha 10 substitua PAHT pelo caminha da pasta que foi criada.
+6. Salve o arquivo.
+7. Vá até o diretorio onde esta o arquivo YML clique da barra de navegação e digite CMD.
+8. Na CLI digite: docker compose up -d.
+9. Salve os arquivos do repositório dentro da pasta criada na area de trabalho.
+10. Pronto. Agora basta acessar o localhost através do navegador de acordo com os arquivos.
 
 ## Tecnologias Usadas 
 <div style="display: inline_block">
